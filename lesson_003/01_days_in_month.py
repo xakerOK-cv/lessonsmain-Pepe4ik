@@ -13,40 +13,30 @@ month = int(user_input)
 print('Вы ввели', month)
 
 # TODO здесь ваш код
-=======
-
-a = 0
-user_input = int(input("Введите, пожалуйста, номер месяца: "))
-month = int(user_input)
-print('Вы ввели', month)
-
-th_0 = '30'
-th_1 = '31'
-lol = '28(29)'
 if month == 1:
-    print('He has', th_1, 'days')
+    print("31")
 elif month == 2:
-    print('He has', lol, 'days')
+    print("28")
 elif month == 3:
-    print('He has', th_1, 'days')
+    print("31")
 elif month == 4:
-    print('He has', th_0, 'days')
+    print("30")
 elif month == 5:
-    print('He has', th_1, 'days')
+    print("31")
 elif month == 6:
-    print('He has', th_0, 'days')
+    print("30")
 elif month == 7:
-    print('He has', th_1, 'days')
+    print("31")
 elif month == 8:
-    print('He has', th_1, 'days')
+    print("31")
 elif month == 9:
-    print('He has', th_0, 'days')
+    print("30")
 elif month == 10:
-    print('He has', th_1, 'days')
+    print("31")
 elif month == 11:
-    print('He has', th_0, 'days')
+    print("30")
 elif month == 12:
-    print('He has', th_1, 'days')
+    print("31")
 else:
-    print("Month's number uncorrect")
+    print("Вы ввели неправильный номер месяца")
 
