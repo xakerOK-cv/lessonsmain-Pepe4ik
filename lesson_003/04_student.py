@@ -13,3 +13,12 @@ educational_grant, expenses = 10000, 12000
 
 
 # TODO здесь ваш код
+months = 10
+debt = 0
+for i in range(months):
+    expenses = expenses * 1.03
+expenses = round(expenses, 2)
+debt = (educational_grant - expenses) * -1
+print(f"Студенту надо попросить {debt} рублей")
+
+
