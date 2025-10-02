@@ -22,3 +22,4 @@ debt = (educational_grant - expenses) * -1
 print(f"Студенту надо попросить {debt} рублей")
 
 
+# OK!
