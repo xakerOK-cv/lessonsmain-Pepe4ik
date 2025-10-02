@@ -49,6 +49,25 @@ store = {
 
 # TODO здесь ваш код
 
+for good in goods:
+    quantity1 = 0
+    price1 = 0
+    item_price = 0 # обнуление счетчика стоимости
+    quantity_total = 0
+    code = (goods.get(good)) # беру код из словаря
+    #print(f"Код{code}")
+    #print("вот тут оно заканчиваепт с поиском кода для вещи и начинает искать цену и кол-во")
+    for item in store[code]:
+        #print("Код",code,item)
+        #print("Кол-во", item.get("quantity"))
+        quantity1 = item.get("quantity")
+        price1 = item.get("price")
+        item_price += price1 * quantity1
+        #print("Цена", item.get("price"))
+        quantity_total += quantity1
+    print(f"<{good}> - {quantity_total}шт, стоимость {item_price} руб")
+
+
 
 
 
