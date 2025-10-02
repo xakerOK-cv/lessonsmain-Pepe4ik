@@ -53,5 +53,5 @@ for i in range(100):
     sd.circle(sd.get_point(random.randint(70,1200),random.randint(70,500)),30, (random.randint(0,255), random.randint(0,255), random.randint(0,255)))
 sd.pause()
 
-
+# работает ! ОК
 
