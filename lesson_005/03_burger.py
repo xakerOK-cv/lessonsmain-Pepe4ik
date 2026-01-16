@@ -16,3 +16,29 @@
 # Если не хватает инградиентов - создать соответствующие функции в модуле my_burger
 
 # TODO здесь ваш код
+#отдельный файл с именем "my_burger" я создавать не буду
+def add_bulochka():
+    print("А теперь добавим булочку")
+def add_kotleta():
+    print("А теперь добавим котлету")
+def add_ogurchiki():
+    print("А теперь добавим огурчика")
+def add_pomidorchiki():
+    print("А теперь добавим помидорчика")
+def add_majones():
+    print("А теперь добавим майонеза")
+def add_cheese():
+    print("А теперь добавим сыра")
+
+add_bulochka()
+add_majones()
+add_cheese()
+add_kotleta()
+add_kotleta()
+add_cheese()
+add_ogurchiki()
+add_pomidorchiki()
+add_bulochka()
+print("Вот и получился двойной чизбургер")
+
+

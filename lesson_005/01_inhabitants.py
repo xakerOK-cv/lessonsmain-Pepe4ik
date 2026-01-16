@@ -5,4 +5,9 @@
 
 # TODO здесь ваш код
 
+from room_1 import folks as folks1
+from room_2 import folks as folks2
+print("В комнате room_1 живут:",*folks1)
+print("В комнате room_2 живут:",*folks2) #в интернетах узнал про *
 
+#названия room_1 и room_2 я надеюсь вот так выводить нужно было
