@@ -44,3 +44,44 @@ import time
 # Точнее, в этом случае важен принцип единственной ответственности - https://goo.gl/rYb3hT
 
 # TODO здесь ваш код...
+import random
+def загадать_число():
+    global numbers
+    numbers = []
+    while len(numbers) < 4:
+        number = str(random.randint(1, 9))
+        if number not in numbers:
+            numbers.append(number)
+
+def проверить_число(user_input):
+    user_input = str(user_input)
+    bulls = 0
+    cows = 0
+    checked = []
+    for i in range(0,4):
+        if user_input[i] == numbers[i]:
+            checked.append(user_input[i])
+            bulls += 1
+        elif user_input[i] in numbers and user_input[i] != numbers[i] and user_input[i] not in checked:
+            checked.append(user_input[i])
+            cows += 1
+        else:
+            pass
+
+    return {"bulls": bulls, "cows": cows}
+
+загадать_число()
+print(numbers)
+while True:
+    user_input = str(input("Введите число: "))
+    result = проверить_число(user_input)
+    print(result)
+
+
+
+
+
+
+
+
+
